@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .nav {
+            overflow: hidden;
+            background-color: #333;
+        }
+        .nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .content {
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Мое Портфолио</h1>
+</div>
+
+<div class="nav">
+    <a href="{{ url_for('index') }}">Главная</a>
+    <a href="{{ url_for('about') }}">О себе</a>
+    <a href="{{ url_for('contact') }}">Контакты</a>
+</div>
+
+<div class="content">
+    <h2>Примеры моих работ</h2>
+    <ul>
+        <li><a href="https://github.com/EzilLize/project_final.git">Проект 1: Название проекта</a></li>
+        <li><a href="https://github.com/EzilLize/Xbox.git">Проект 2: Название проекта</a></li>
+        <li><a href="https://github.com/EzilLize/dj_form.git">Проект 3: Название проекта</a></li>
+    </ul>
+
+</div>
+
+<div class="footer">
+    © 2025 Ezilrib Studio
+</div>
+
+</body>
+</html>

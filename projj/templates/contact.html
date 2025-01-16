@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .nav {
+            overflow: hidden;
+            background-color: #333;
+        }
+        .nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .content {
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Свяжитесь со мной</h1>
+</div>
+
+<div class="nav">
+    <a href="{{ url_for('index') }}">Главная</a>
+    <a href="{{ url_for('about') }}">О себе</a>
+    <a href="{{ url_for('portfolio') }}">Портфолио</a>
+</div>
+
+<div class="content">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name"><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        
+        <label for="message">Сообщение:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+        
+    
+    <h2>Социальные сети</h2>
+    <ul>
+        <li><a href="https://github.com/EzilLize">GitHub</a></li>
+        <li><a href="https://t.me/NiggerEnjoyer">Telegram</a></li>
+    </ul>
+</div>
+
+<div class="footer">
+    © 2025 Ezilrib Studio
+</div>
+
+</body>
+</html>

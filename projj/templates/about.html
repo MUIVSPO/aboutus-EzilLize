@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О себе</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .nav {
+            overflow: hidden;
+            background-color: #333;
+        }
+        .nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .content {
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Обо мне</h1>
+</div>
+
+<div class="nav">
+    <a href="{{ url_for('index') }}">Главная</a>
+    <a href="{{ url_for('portfolio') }}">Портфолио</a>
+    <a href="{{ url_for('contact') }}">Контакты</a>
+</div>
+
+<div class="content">
+    <h2>Образование</h2>
+    <ul>
+        <li>Колледж при Московском государственном университете имени С.Ю. Витте, Группа ИСП-Р 23/11.</li>
+    </ul>
+    
+    <h2>Навыки</h2>
+    <ul>
+        <li>Языки программирования: Python, JavaScript(немного), PHP (немного)</li>
+        <li>Веб-разработка: HTML, CSS, React, Flask</li>
+        <li>Базы данных: sqLite3</li>
+    </ul>
+    
+    <h2>Хобби</h2>
+    <p>В свободное время я стримингом, а также монтажом видео.</p>
+</div>
+
+<div class="footer">
+    © 2025 Ezilrib Studio
+</div>
+
+</body>
+</html>
